@@ -30,11 +30,13 @@ const Orders = () => {
                     ></ReviewItem>)
                 }
                 {
-                    cart.length === 0 && <h2>No Items for Review. Please <Link to="/">Shop more</Link></h2>
+                    cart.length === 0 && <h2>No Items for Review. Please <Link to="/" className='underline text-themeOrange-10 font-bold'>Shop more</Link></h2>
                 }
             </div>
             <div className='cart-container'>
-                <Cart clearCart={clearCart} cart={cart}></Cart>
+                <Cart clearCart={clearCart} cart={cart}>
+                    <Link to='/shipping' className='bg-themeOrange-10 p-3 text-themeWhite rounded-xl text-base ml-2 mt-3'>Proceed Shipping</Link>
+                </Cart>
             </div>
         </div>
     );

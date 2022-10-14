@@ -60,7 +60,7 @@ const Shop = () => {
             <div className="cart-container">
                 <Cart clearCart={clearCart} cart={cart}>
                     <Link to="/orders">
-                        <button>Review Order</button>
+                        <button className='bg-themeOrange-10 p-3 text-themeWhite rounded-xl text-base ml-2 mt-3'>Review Order</button>
                     </Link>
                 </Cart>
             </div>
